@@ -13,7 +13,7 @@ xhr.onreadystatechange = () => {
     if (xhr.readyState == 4 && xhr.status == 200) {
 		documento = xhr.response;
 		objdocumento = JSON.parse(documento);
-        console.log(objdocumento);
+        console.log(objdocumento.title);
     }
 };
 
